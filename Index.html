@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaLatina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- 🟥 Barra de navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#" onclick="mostrarSeccion('inicio')">
+                <img src="Images/Logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="menu-toggle">☰</div>
+
+        <ul class="nav-links">
+            <li><a href="#" onclick="mostrarSeccion('menu')">Menú</a></li>
+            <li><a href="#" onclick="mostrarSeccion('restaurantes')">Restaurantes</a></li>
+            <li><a href="#" onclick="mostrarSeccion('nosotros')">Nosotros</a></li>
+            <li><a href="#" onclick="mostrarSeccion('ordenar')">Ordenar</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🚀 Secciones de la página -->
+    <div id="inicio" class="seccion activa">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img
+                        src="https://instagram.fsjo6-1.fna.fbcdn.net/v/t39.30808-6/474440327_1027091046117302_8325785970883537314_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2xlX3RhZyI6ImltYWdlX3VybGdlbi4xMDgweDEwODAuc2RyLmYzMDgwOC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=instagram.fsjo6-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=wWfMWiMYq8EQ7kNvgHoMn6p&_nc_gid=2289b43f205a47518af6db431ff9f4b6&edm=AP4sbd4AAAAA&ccb=7-5&ig_cache_key=MzU1MzQ1NTkyNzA1NzY2MjA3OQ%3D%3D.3-ccb7-5&oh=00_AYAyKOMR3W8meLpwcdCbM-EMkKR1T2iU8rcLSL_QzSURhA&oe=679E56DD&_nc_sid=7a9f4b"
+                        alt="Promoción 1"></div>
+                <div class="slide"><img
+                        src="https://instagram.fsjo6-1.fna.fbcdn.net/v/t39.30808-6/415001892_761863902640019_2326490096568859952_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMjAweDEyMDAuc2RyLmYzMDgwOC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=instagram.fsjo6-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=qPmmizSEMTsQ7kNvgHkGaLJ&_nc_gid=c4e19f27654f4f4b900d26120b640b99&edm=APoiHPcAAAAA&ccb=7-5&ig_cache_key=MzI3MjIxNjI3NTg3NDE5MDk5NQ%3D%3D.3-ccb7-5&oh=00_AYBZrMs5toStAYTudzZoY569T1JAis5nbU3OPRDrPbuNvg&oe=679E45F4&_nc_sid=22de04"
+                        alt="Promoción 2"></div>
+                <div class="slide"><img
+                        src="https://instagram.fsjo6-1.fna.fbcdn.net/v/t39.30808-6/470201720_996347315858342_5936156475761548033_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2xlX3RhZyI6ImltYWdlX3VybGdlbi4xMDgweDEzNTAuc2RyLmYzMDgwOC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=instagram.fsjo6-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=mCM8PvsEjbQQ7kNvgFQYlL_&_nc_gid=7bfddd5cac6b4293a8f3c7a5522a5faf&edm=APoiHPcAAAAA&ccb=7-5&ig_cache_key=MzUyMzA2MDQ1ODEwNzg0Mzc3Nw%3D%3D.3-ccb7-5&oh=00_AYAARQFSNJ1Z6BrlvOul1Je5FOX7hOo2UpdBRoTiT4qHtQ&oe=679E5A6B&_nc_sid=22de04"
+                        alt="Promoción 3"></div>
+            </div>
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+    </div>
+
+    <div id="menu" class="seccion">
+        <h2>Menú de Pizzas</h2>
+        <p>Aquí puedes ver nuestro menú con deliciosas pizzas.</p>
+    </div>
+
+    <!-- Lista de Restaurantes -->
+    <div id="restaurantes" class="seccion">
+        <div class="banner-container">
+            <img class="banner-restaurantes" src="images/Restaurantes.png" alt="Nuestros Restaurantes">
+        </div>
+        <div class="restaurantes">
+            <button class="restaurante-btn" onclick="mostrarRestaurante('restaurante1')">
+                <div class="restaurante-info">
+                    <img src="images/Logo.png" alt="Restaurante 1">
+                    <h3>Latina Pizza Ciudad Quesada</h3>
+                    <p>Ubicación: Provincia de Alajuela, Cd Quesada, Barrio El Jardín</p>
+                </div>
+            </button>
+            <hr>
+            <button class="restaurante-btn" onclick="mostrarRestaurante('restaurante2')">
+                <div class="restaurante-info">
+                    <img src="images/Logo.png" alt="Restaurante 2">
+                    <h3>Latina Pizza Naranjo</h3>
+                    <p>Ubicación: Calle Ejemplo 456</p>
+                </div>
+            </button>
+            <hr>
+            <button class="restaurante-btn" onclick="mostrarRestaurante('restaurante3')">
+                <div class="restaurante-info">
+                    <img src="images/Logo.png" alt="Restaurante 3">
+                    <h3>Latina Pizza San Ramón</h3>
+                    <p>Ubicación: San Ramón, Alajuela</p>
+                </div>
+            </button>
+            <hr>
+            <button class="restaurante-btn" onclick="mostrarRestaurante('restaurante4')">
+                <div class="restaurante-info">
+                    <img src="images/Logo.png" alt="Restaurante 4">
+                    <h3>Latina Pizza Guapiles</h3>
+                    <p>Ubicación: Grecia, Alajuela</p>
+                </div>
+            </button>
+            <hr>
+            <button class="restaurante-btn" onclick="mostrarRestaurante('restaurante5')">
+                <div class="restaurante-info">
+                    <img src="images/Logo.png" alt="Restaurante 5">
+                    <h3>Latina Pizza La Fortuna</h3>
+                    <p>Ubicación: Palmares, Alajuela</p>
+                </div>
+            </button>
+            <hr>
+            <button class="restaurante-btn" onclick="mostrarRestaurante('restaurante6')">
+                <div class="restaurante-info">
+                    <img src="images/Logo.png" alt="Restaurante 6">
+                    <h3>Latina Pizza Aguas Zarcas</h3>
+                    <p>Ubicación: Poás, Alajuela</p>
+                </div>
+            </button>
+            <hr>
+            <button class="restaurante-btn" onclick="mostrarRestaurante('restaurante6')">
+                <div class="restaurante-info">
+                    <img src="images/Logo.png" alt="Restaurante 6">
+                    <h3>Latina Pizza Cariari</h3>
+                    <p>Ubicación: Poás, Alajuela</p>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- Detalles del Restaurante (oculto al principio) -->
+    <div id="restaurante1" class="restaurante-detalle" style="display:none;">
+        <div class="banner-container">
+            <img class="banner-restaurantes" src="images/Restaurantes.png" alt="Nuestros Restaurantes">
+        </div>
+        <div class="restaurante-contenedor">
+            <!-- Imagen a la izquierda -->
+            <div class="restaurante-imagen">
+                <img src="Images/CQPIZZA.jpg" alt="CiudadQuesada" class="imagen-restaurante">
+            </div>
+            
+            <!-- Horario a la derecha -->
+            <div class="horario">
+                <h3>Horario de Atención:</h3>
+                <div class="horario-dia">
+                    <span>Lunes:</span> <span>11:00 AM - 10:00 PM</span>
+                </div>
+                <div class="horario-dia">
+                    <span>Martes:</span> <span>11:00 AM - 10:00 PM</span>
+                </div>
+                <div class="horario-dia">
+                    <span>Miércoles:</span> <span>11:00 AM - 10:00 PM</span>
+                </div>
+                <div class="horario-dia">
+                    <span>Jueves:</span> <span>11:00 AM - 10:00 PM</span>
+                </div>
+                <div class="horario-dia">
+                    <span>Viernes:</span> <span>11:00 AM - 10:00 PM</span>
+                </div>
+                <div class="horario-dia">
+                    <span>Sábado:</span> <span>11:00 AM - 10:00 PM</span>
+                </div>
+                <div class="horario-dia">
+                    <span>Domingo:</span> <span>11:00 AM - 10:00 PM</span>
+                </div>
+                <div>
+                    <span>Teléfono:</span> <span>86484994</span>
+                </div>
+            </div>
+        </div>
+        <div class="ubicacion">
+            <h3>Visítanos en Google Maps:</h3>
+            <a href="https://g.co/kgs/Uu5rv8e" target="_blank">
+                <button>Ver Ubicación</button>
+            </a>
+        </div>
+        <button onclick="volverArestaurantes()">Volver a Restaurantes</button>
+    </div>
+
+    <div id="restaurante2" class="restaurante-detalle" style="display:none;">
+        <button onclick="volverArestaurantes()">Volver a Restaurantes</button>
+        <img src="images/restaurante2.jpg" alt="Restaurante 2 Imagen" class="restaurante-img">
+        <div class="horario">
+            <p>Horario: Lunes - Viernes: 11:00 AM - 10:00 PM</p>
+        </div>
+    </div>
+    <!-- Más secciones para otros restaurantes -->
+
+
+
+    <div id="nosotros" class="seccion">
+        <h2>Sobre Nosotros</h2>
+        <p>Conoce más sobre nuestra pizzería.</p>
+    </div>
+
+    <div id="ordenar" class="seccion">
+        <h2>Ordena tu Pizza</h2>
+        <p>Aquí puedes hacer tu pedido en línea.</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</body>

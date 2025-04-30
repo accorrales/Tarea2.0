@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PizzaLatina - Menú</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="navbar-placeholder"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Sección Nosotros -->
+    <!-- Aquí va el navbar que se carga dinámicamente -->
+    <main class="container mt-4">
+      <div id="menu" class="seccion activa">
+        <!-- ✅ -->
+        <div class="container container-custom mt-4">
+          <div class="row">
+            <div class="container">
+              <!-- Menú -->
+              <div class="menu">
+                <h2>MENÚ</h2>
+                <div class="menu-item menu-btn" data-section="promociones">
+                  <img src="images/PromocionTodosDias.jpg" alt="Promociones" />
+                  <button>PROMOCIONES</button>
+                </div>
+                <div class="menu-item menu-btn" data-section="pizzas">
+                  <img src="images/Pizza.jpg" alt="Pizzas" />
+                  <button>Pizzas</button>
+                </div>
+                <div class="menu-item menu-btn" data-section="pastas">
+                  <img src="images/pastas.jpg" alt="Pastas" />
+                  <button>Pastas</button>
+                </div>
+                <div class="menu-item menu-btn" data-section="aperitivos">
+                  <img src="images/aperitivos.jpeg" alt="Aperitivos" />
+                  <button>Aperitivos</button>
+                </div>
+                <div class="menu-item menu-btn" data-section="bebidas">
+                  <img src="images/agua (1).jpg" alt="Bebidas" />
+                  <button>Bebidas</button>
+                </div>
+              </div>
+
+              <!-- Contenedor dinámico -->
+              <div class="contenido-container" id="contenido-container">
+                <h2 id="contenido-title">Selecciona una categoría</h2>
+                <div id="contenido-body">
+                  <!-- Aquí se cargará el contenido dinámico -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Aquí va el footer dinámico -->
+    <div id="footer-placeholder"></div>
+    <script src="js/include-nav-footer.js"></script>
+    <!-- Carga de scripts -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

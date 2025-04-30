@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PizzaLatina - Nosotros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Sección Nosotros -->
+  <main class="container mt-4">
+  <div id="nosotros" class="seccion activa">
+    <div class="banner-container">
+      <img class="banner-restaurantes" src="images/QuienesSomos2.png" alt="Quienes Somos">
+    </div>
+    <div class="contenedor">
+      <div class="sidebar">
+        <button class="menu-btn active" onclick="cambiarContenido('quienes-somos', event)">
+          <img src="images/quienes-somos.png" alt="Icono"> ¿Quiénes somos?
+        </button>
+        <button class="menu-btn" onclick="cambiarContenido('trabajo', event)">
+          <img src="images/entrega-de-pizza.png" alt="Icono"> Trabaja con nosotros
+        </button>
+        <button class="menu-btn" onclick="cambiarContenido('contacto', event)">
+          <img src="images/contactenos.png" alt="Icono"> Contáctenos
+        </button>
+      </div>
+      <div class="contenido">
+        <div id="quienes-somos" class="contenido-seccion activo">
+          <h2>¿Quiénes somos?</h2>
+          <p>En PizzaLatina, nos enorgullecemos de ofrecer a nuestros clientes la mejor experiencia gastronómica con ingredientes frescos y recetas tradicionales. Desde nuestros inicios, hemos trabajado con pasión para brindar productos de calidad y un servicio excepcional en cada uno de nuestros locales. Nuestro compromiso es fusionar sabores auténticos con un ambiente acogedor, donde cada cliente se sienta como en casa.</p>
+          <p>Creemos que la comida es más que solo un plato; es una experiencia que une a las personas y crea momentos memorables. Nos esforzamos en innovar continuamente, asegurándonos de que cada visita a PizzaLatina sea inolvidable y llena de sabor.</p>
+          <div class="mision-vision">
+            <div class="mv-item">
+              <h3>Misión</h3>
+              <p>Ofrecer pizzas auténticas con sabores latinos, utilizando ingredientes frescos y recetas tradicionales, brindando una experiencia culinaria única.</p>
+            </div>
+            <div class="mv-item">
+              <h3>Visión</h3>
+              <p>Ser la pizzería líder en sabores latinos, reconocida por nuestra calidad, autenticidad y servicio excepcional.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div id="trabajo" class="contenido-seccion">
+          <h2>Trabaja con nosotros</h2>
+          <p>En PizzaLatina, creemos en el talento y la pasión de nuestro equipo. Buscamos personas comprometidas, con actitud positiva y ganas de crecer en un ambiente dinámico.</p>
+          
+          <h3>Beneficios</h3>
+          <ul>
+            <li>Ambiente de trabajo agradable</li>
+            <li>Oportunidades de crecimiento</li>
+            <li>Capacitación constante</li>
+            <li>Horarios flexibles</li>
+            <li>Descuentos en nuestros productos</li>
+          </ul>
+          
+          <h3>Posiciones disponibles</h3>
+          <div class="puestos">
+            <div class="puesto">
+              <h4>Pizzero</h4>
+              <p>Preparación de pizzas según estándares de calidad</p>
+            </div>
+            <div class="puesto">
+              <h4>Atención al cliente</h4>
+              <p>Servicio en mostrador y toma de pedidos</p>
+            </div>
+            <div class="puesto">
+              <h4>Repartidor</h4>
+              <p>Entrega de pedidos a domicilio</p>
+            </div>
+          </div>
+          
+          <button class="btn-ordenar">Enviar solicitud</button>
+        </div>
+        
+        <div id="contacto" class="contenido-seccion">
+          <h2>Contáctenos</h2>
+          <p>Estamos aquí para atenderte. Puedes comunicarte con nosotros a través de los siguientes medios:</p>
+          
+          <div class="info-contacto">
+            <div class="contacto-item">
+              <i class="bi bi-telephone"></i>
+              <h4>Teléfono</h4>
+              <p>+506 2222-2222</p>
+            </div>
+            <div class="contacto-item">
+              <i class="bi bi-envelope"></i>
+              <h4>Email</h4>
+              <p>info@pizzalatina.com</p>
+            </div>
+            <div class="contacto-item">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Dirección</h4>
+              <p>San José, Costa Rica</p>
+            </div>
+          </div>
+          
+          <h3>Formulario de contacto</h3>
+          <form class="form-contacto">
+            <div class="form-group">
+              <input type="text" placeholder="Nombre" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn-ordenar">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+<!-- Script para cargar el navbar y footer -->
+</main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/include-nav-footer.js"></script>
+</body>
+</html>
